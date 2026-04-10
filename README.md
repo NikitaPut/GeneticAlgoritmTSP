@@ -209,7 +209,7 @@ java -cp out Main
 ---
 
 ## 📁 Структура проекта
-
+```
 src/
 ├── algorithms/
 │   ├── GeneticAlgorithm.java      # Генетический алгоритм
@@ -231,7 +231,7 @@ src/
 │   └── GraphPreviewPanel.java     # Просмотр полного графа
 │
 └── Main.java                      # Точка входа
-
+```
 ---
 
 ## 📝 Формат сохраняемых файлов
