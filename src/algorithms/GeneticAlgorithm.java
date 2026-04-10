@@ -78,7 +78,7 @@ public class GeneticAlgorithm {
             population = newPopulation;
 
             // Коллбэк для визуализации
-            if (callback != null && generation % 2 == 0) {
+            if (callback != null && generation % 5 == 0) {
                 callback.onIteration(generation, bestRoute, bestDistance);
             }
         }

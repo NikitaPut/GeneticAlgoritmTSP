@@ -17,6 +17,21 @@ public class Graph {
         calculateDistanceMatrix();
     }
 
+    public Graph(City[] citiesToCopy) {
+        this.numCities = citiesToCopy.length;
+        this.bound = 800;
+        this.cities = new City[numCities];
+        this.distanceMatrix = new double[numCities][numCities];
+
+        // Копируем города
+        for (int i = 0; i < numCities; i++) {
+            City original = citiesToCopy[i];
+            this.cities[i] = new City(original.getId(), original.getX(), original.getY());
+        }
+
+        calculateDistanceMatrix();
+    }
+
     private void generateRandomCities() {
         Random random = new Random();
         for (int i = 0; i < numCities; i++) {
